@@ -1,0 +1,46 @@
+Linear algebra is a branch of mathematics that deals with the study of vectors and linear transformations. It has a wide range of applications in fields such as physics, engineering, computer science, and economics.
+
+    Key concepts in linear algebra include vectors, matrices, linear transformations, eigenvalues, and eigenvectors.
+
+    A vector is a mathematical object that has both a magnitude and a direction. Vectors can be added and scaled, and they can be represented as an ordered list of numbers.
+
+    Matrices are arrays of numbers that can be used to represent linear transformations. Matrices can be added, subtracted, and multiplied, and they can be used to solve systems of linear equations.
+
+    Linear transformations are functions that take vectors as input and produce new vectors as output. They are called linear because they preserve the operations of vector addition and scalar multiplication.
+
+    The determinant of a matrix is a scalar value that can be used to study the properties of a linear transformation such as its invertibility.
+
+    The inverse of a matrix is a matrix that can be used to undo a given matrix transformation, if it exists.
+
+    Eigenvalues and eigenvectors are special types of vectors that are unchanged by a linear transformation. Eigenvectors are also known as characteristic vectors.
+
+    The rank of a matrix is a number that indicates the number of linearly independent rows or columns in the matrix.
+
+    Linear algebra is also used to study the properties of subspaces, which are subsets of a vector space that are closed under the operations of vector addition and scalar multiplication.
+
+    Linear algebra also provides a powerful tool for understanding and solving optimization problems, such as linear programming and least squares.
+
+    Linear algebra has a wide range of applications in fields such as physics, engineering, computer science, and economics. In physics, it is used to study the properties of linear systems and to model physical phenomena. In engineering, it is used to solve problems in control systems and signal processing. In computer science, it is used in the study of graphics and computer vision. In economics, it is used to model and solve optimization problems.
+
+    Some famous linear algebra models are: Singular Value Decomposition (SVD), Principal Component Analysis (PCA), Linear Discriminant Analysis (LDA), Eigenvalue Decomposition, etc.
+
+1. Gaussian Elimination (MATLAB)
+A = [3, 2, -1; 2, -2, 4; -1, 1/2, -1];
+b = [1; -2; 0];
+
+% Forward elimination
+for k = 1:2
+    for i = k+1:3
+        factor = A(i,k) / A(k,k);
+        A(i,k) = 0;
+        A(i,k+1:3) = A(i,k+1:3) - factor*A(k,k+1:3);
+        b(i) = b(i) - factor*b(k);
+    end
+end
+
+% Back substitution
+x = zeros(3,1);
+x(3) = b(3) / A(3,3);
+for i = 2:-1:1
+    x(i) = (b(i) - A(i,i+1:3)*x(i+1:3)) / A(i,i);
+end

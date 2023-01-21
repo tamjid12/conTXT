@@ -1,0 +1,18 @@
+Game theory is the study of mathematical models of strategic interaction between rational decision-makers. It has applications in all fields of social science, as well as in logic, systems science, and computer science.
+-Key concepts in game theory include strategic form games, normal form games, mixed strategy equilibrium, and Nash equilibrium.
+-Strategic form games involve a list of players, a list of strategies for each player, and a payoff function that describes the payoffs for each possible combination of strategies.
+-Normal form games involve a matrix that describes the payoffs for each player, given the strategies of all players.
+-Mixed strategy equilibrium occurs when each player's strategy is a probability distribution over their pure strategies.
+-Nash equilibrium is a solution concept in which each player's strategy is a best response to the strategies of the other players.
+-One important application of game theory is in the study of cooperative game, where the focus is on how groups of individuals can work together to achieve a common goal.
+-Another important application is in the study of mechanism design, where the goal is to design institutions or rules to align the incentives of individuals with the social good.
+-Game theory also widely used in economics, political science, psychology, and biology to study various phenomena like market competition, political stability, social norms, and evolution of species.
+-Some famous Game theory models are: Prisoner's dilemma, Ultimatum Game, Chicken Game, Battle of Sexes, Centipede game, etc.
+-Another concept related to game theory is "Dominant strategy," which is a strategy that is always the best choice for a player, regardless of the strategies chosen by the other players.
+-"Dominant strategy equilibrium" is a situation in which every player has a dominant strategy.
+-"Pareto efficiency" is a solution concept in which it is not possible to make any one player better off without making at least one other player worse off.
+-"Pareto optimum" is a situation in which all players are operating at a Pareto efficient point.
+-Game theory can also be extended to include games with incomplete information, such as Bayesian games, where players have uncertain information about the strategies or payoffs of the other players.
+-Game theory also has applications in the field of artificial intelligence, specifically in the area of decision making under uncertainty.
+-Reinforcement learning, which is a method for training artificial agents to make decisions, is closely related to the concept of sequential decision making in game theory.
+-Finally, it's worth mentioning that game theory is not only useful in understanding the behavior of rational agents but also irrational ones, as it can be used to model and predict human behavior and decision making in various settings.
