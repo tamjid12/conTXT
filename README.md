@@ -1,4 +1,4 @@
-# conTXT
+# ConTXT
 
 **Inspiration**
 
